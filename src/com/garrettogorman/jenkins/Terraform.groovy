@@ -17,12 +17,12 @@ def output() {
 }
 
 def setup(String environment) {
-  sshagent(credentials: ['git']) {
+  // sshagent(credentials: ['git']) {
     clean(environment)
     init()
     workspace(environment)
     validate()
-  }
+  // }
 }
 
 private
