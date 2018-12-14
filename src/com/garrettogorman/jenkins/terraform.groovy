@@ -1,4 +1,4 @@
-package garrettogorman.jenkins
+package com.garrettogorman.jenkins
 
 import groovy.json.JsonSlurper
 
