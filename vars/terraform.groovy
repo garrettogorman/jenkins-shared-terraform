@@ -1,6 +1,7 @@
 #!/usr/bin/groovy
 
-def call(String lockId, String environment, String blueprintDir, String githubTeam) {
+// def call(String lockId, String environment, String blueprintDir, String githubTeam) {
+  def call(String lockId, String environment, String blueprintDir) {
     def terraform = new com.garrettogorman.jenkins.Terraform()
 
     lock(lockId) {
