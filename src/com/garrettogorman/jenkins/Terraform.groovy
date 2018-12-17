@@ -25,9 +25,9 @@ def setup(String environment) {
   // }
 }
 
-def destroy(String environment) {
-  sh "terraform destroy"
-}
+// def destroy(String environment) {
+//   sh "terraform destroy"
+// }
 
 private
 
