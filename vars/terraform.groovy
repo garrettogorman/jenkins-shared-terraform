@@ -12,7 +12,8 @@
         switch(terraform.plan(environment)) {
           case 0:
             echo 'No changes to make'
-            terraform.apply(environment)
+            // terraform.apply(environment)
+            terraform.destroy(environment)            
             break
           case 1:
             err 'An error has occured'
