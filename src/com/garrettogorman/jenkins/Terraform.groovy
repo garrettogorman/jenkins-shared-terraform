@@ -39,7 +39,7 @@ def init() {
   terraform init -upgrade=true \
     -backend-config=\"bucket=terraform-state-garrett\" \
     -backend-config=\"encrypt=true\" \
-    -backend-config=\"dynamodb_table=terraform_statelock_garrett\" \
+    -backend-config=\"dynamodb_table=gar-ddt-tfstatelock\" \
     -backend-config=\"region=eu-west-1\"
   """
 }
