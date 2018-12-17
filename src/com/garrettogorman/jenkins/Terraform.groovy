@@ -37,9 +37,9 @@ def init() {
   echo 'Initialise Terraform'
   sh """
   terraform init -upgrade=true \
-    -backend-config=\"bucket=qs-root-terraform-state\" \
+    -backend-config=\"bucket=terraform-state-garrett\" \
     -backend-config=\"encrypt=true\" \
-    -backend-config=\"dynamodb_table=terraform_statelock\" \
+    -backend-config=\"dynamodb_table=terraform_statelock_garrett\" \
     -backend-config=\"region=eu-west-1\"
   """
 }
