@@ -2,12 +2,16 @@ package com.garrettogorman.jenkins
 
 import groovy.json.JsonSlurper
 
-def plan(String environment) {
-  sh script: "terraform plan -detailed-exitcode -out=${environment}_plan", returnStatus: true
-}
+// def plan(String environment) {
+//   sh script: "terraform plan -detailed-exitcode -out=${environment}_plan", returnStatus: true
+// }
 
-def apply(String environment) {
-  sh "terraform apply -auto-approve ${environment}_plan"
+// def apply(String environment) {
+//   sh "terraform apply -auto-approve ${environment}_plan"
+// }
+
+def destroy(String environment) {
+  sh "terraform destroy -auto-approve"
 }
 
 def output() {
